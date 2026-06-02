@@ -59,6 +59,18 @@ Nicht in dieses Repository gehören:
 
 Das lokale Borg-Repository `backup-repo/` wird über `.gitignore` ausgeschlossen.
 
+## Version 1.1
+
+Version 1.1 ergänzt ein erstes automatisiertes Backup-Skript:
+
+- `scripts/backup.sh`
+- Archivnamen mit Zeitstempel
+- Logdatei pro Backup-Lauf
+- automatische Anzeige vorhandener Archive nach dem Backup
+- zusätzliche Dokumentation in `docs/backup-script.md`
+
+Das Skript speichert keine Borg-Passphrase. Die Passphrase wird im Lab weiterhin interaktiv eingegeben.
+
 ## Aktueller Stand
 
 Version 1.0 enthält:
