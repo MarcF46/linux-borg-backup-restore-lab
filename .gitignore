@@ -1,0 +1,25 @@
+# Borg repository data must never be committed
+backup-repo/
+*.repo/
+
+# Restore output should stay local
+restore-test/
+
+# Logs may contain local paths or sensitive operational details
+logs/
+
+# Environment files may contain secrets/passphrases
+*.env
+.env
+backup.env
+
+# SSH keys must never be committed
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/

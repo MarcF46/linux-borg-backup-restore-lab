@@ -1,0 +1,2 @@
+Restore test goal:
+Verify that a deleted file can be restored from a Borg archive.
