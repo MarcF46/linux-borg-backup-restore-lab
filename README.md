@@ -31,6 +31,12 @@ Der Fokus liegt nicht nur auf dem Erstellen eines Backups, sondern auf dem volls
 
 WSL2 steht für Windows Subsystem for Linux Version 2. Damit kann eine Linux-Umgebung direkt unter Windows genutzt werden.
 
+## Architektur im Überblick
+
+![Architekturdiagramm des BorgBackup-Ablaufs](docs/architecture/borg-backup-restore.svg)
+
+Die Grafik zeigt den vollständigen Lernpfad vom Ausgangsbestand über das automatisierte Backup in ein verschlüsseltes Borg-Repository bis zum getrennten Restore-Test und der abschließenden Validierung mit Inhaltsprüfung und `borg check`.
+
 ## Getestetes Szenario
 
 In diesem Lab wurde ein typischer Betriebsfehler simuliert:
